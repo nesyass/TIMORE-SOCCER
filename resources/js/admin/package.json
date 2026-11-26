@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "animejs": "4.5.0",
+    "clsx": "2.1.1",
+    "motion": "14.14.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-is": "19.3.1",
+    "recharts": "3.11.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  },
+  "private": true,
+  "scripts": {
+    "build": "esbuild ./interactions.js ./registration-chart.jsx --bundle --format=esm --minify --jsx=automatic --outdir=../../../public/assets/admin/js/enhancements"
+  }
+}
