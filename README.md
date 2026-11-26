@@ -30,6 +30,3 @@ Untuk menjalankan jadwal kedaluwarsa pendaftaran saat pengembangan, jalankan `ph
 
 Jalankan `php artisan test --filter=Admin` dengan database MySQL khusus tes, misalnya `timore_admin_test`, dan akun yang hanya punya izin pada database tes. Isi variabel koneksi MySQL tes di terminal sebelum menjalankan perintah.
 
-## Berkolaborasi lewat GitHub
-
-Integrasikan file admin melalui branch yang dibuat dari versi terbaru repo tim. Gabungkan pemanggilan route admin pada `routes/web.php` dengan route publik yang sudah ada. Dashboard menggunakan model `App\Models\User` dan guard sesi `web`. Pertahankan cast boolean `is_admin` dan biarkan atribut itu di luar `$fillable`. Cocokkan migrasi dengan skema tim sebelum dijalankan. Simpan `.env`, data MySQL, file unggahan, dan dependensi hasil instalasi di lingkungan masing-masing.
